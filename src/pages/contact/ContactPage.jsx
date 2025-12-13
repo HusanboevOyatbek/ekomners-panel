@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { LanguageContext } from '../../context/ChangeLanguale'
 
 function ContactPage() {
-  return (
-    <>
-    <h1>
-        Contact
-    </h1>
-    </>
-  )
+    const { t } = useContext(LanguageContext);
+    return (
+        <>
+            <h1>
+                {t.Contact}
+            </h1>
+        </>
+    )
 }
 
 export default ContactPage
